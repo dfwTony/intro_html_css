@@ -1,0 +1,98 @@
+<!-- Form inputs: text, email, password, date, phone,radio button, checkbox, select -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #ffffff;
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal; 
+        }
+
+        form {
+            width: 20%;
+            border: 1px solid #2A1A0E;
+            padding: 20px;
+            margin: auto;
+        }
+
+        label{
+            color: #000000;
+        }
+
+        .full-width {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-bottom: 12px;
+        } 
+        
+        button {
+            width: 100%;
+            border-color: #2A1A0E;
+            border-radius: 10PX;
+            padding: 16PX;
+            color: #000E24;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="full_name">Full Name</label>
+        <input class="full-width" type="text" name="full_name" id="full_name" placeholder="Francis Mutisia" required>
+
+        <label for="email">Email</label>
+        <input class="full-width" type="email" name="email" id="email" placeholder="Email" required>
+
+        <label for="password">Password</label>
+        <input class="full-width" type="text" name="Password" id="password" placeholder="********" required>
+
+        <label for="phone">Phone No</label>
+        <input class="full-width"  type="tel" name="phone" id="phone" placeholder="0712345678" required>
+
+        <label for="date">Date of Birth</label>
+        <input class="full-width" type="date" name="date" id="date" min="1940-01-01" max="2008-01-01">
+
+        <hr>
+
+        <label>Select your Gender</label>
+        <br>
+        <label for="radio">Male</label>
+        <input type="radio" name="gender" id="male" value="m">
+        <label for="radio">Female</label>
+        <input type="radio" name="gender" id="Female" value="f">
+
+        <hr>
+
+        <label>Select your sport</label>
+        <br>
+        <label for="checkbox">Tennis</label>
+        <input type="checkbox" name="tennis" id="tennis" value="tennis">
+        <br>
+        <label for="checkbox">Rugby</label>
+        <input type="checkbox" name="tennis" id="tennis" value="rugby">
+        <br>
+        <label for="checkbox">Soccer</label>
+        <input type="checkbox" name="tennis" id="Soccer" value="Soccer">
+
+        <hr>
+
+        <label>Select your County</label>
+        <label for="county">County</label>
+        <select name="county" id="county">
+            <option value="nairobi">Nairobi</option>
+            <option value="Mombasa">Mombasa</option>
+            <option value="Kisumu">Kisumu</option>
+        </select>
+        <button>SUBMIT</button>
+    </form>
+</body>
+</html>
