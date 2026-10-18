@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: "poppins", sans-serif;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: red;
+        }
+        .nav-item {
+            width: 70%;
+            background: grey;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-item img {
+            width: 100px;
+            height: 100px;
+        }
+        .nav-item ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-item li {
+            margin-right: 16px;
+            margin-left: 16px;
+        }
+
+        .nav-item a {
+            text-decoration: none;
+            color: #000;
+            text-transform: capitalize;
+             
+        }
+
+        .nav-item a:hover {
+            color: #e615b5;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sematic Tags -->
+    <nav>
+        <div class="nav-item">
+            <img src="images/fixed_by_tony_logo.png" alt="fixed by tony logo">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Team</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+</body>
+</html>
