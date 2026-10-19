@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.col {
+    width: 23%;
+    border: 1px solid #e30606;
+    padding: 8px;
+}
+
+p {
+    text-align: center;
+}
+
+/* Media Queries */
+
+/* medium device - tablets */
+@media screen and (min-width:768px) and (max-width: 1023px) {
+    .row {
+        flex-wrap: wrap;
+    }
+    .col {
+        width: 48%;
+
+    }
+
+    p{
+        color: green;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .row {
+        flex-wrap: wrap;
+    }
+    .col {
+        width: 98%;
+
+    }
+
+    p{
+        color: blue;
+    }
+}
